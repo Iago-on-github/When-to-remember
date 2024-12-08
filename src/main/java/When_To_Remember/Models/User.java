@@ -18,7 +18,7 @@ public class User {
     private String email;
     private String password;
     @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-    @JsonIgnore
+    @JsonManagedReference
     private List<Matter> matters = new ArrayList<>();
 
     public User() {

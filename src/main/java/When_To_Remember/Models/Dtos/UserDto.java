@@ -6,7 +6,5 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import java.util.List;
 import java.util.UUID;
 
-public record UserDto(UUID id, String name, String email, String password,
-                      @JsonIgnore
-                      List<Matter> matters) {
+public record UserDto(UUID id, String name, String email, String password, List<Matter> matters) {
 }
